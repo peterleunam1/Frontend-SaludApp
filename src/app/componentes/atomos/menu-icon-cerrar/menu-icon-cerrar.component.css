@@ -1,0 +1,19 @@
+.icon{
+    position: absolute;
+    left: 50%;
+    bottom: 6px;
+    font-size: 23px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    transform: translateX(-50%);
+}
+div.active{
+    left: 90%;
+}
+@media (max-width: 580px){
+    div{
+      display: none;
+    }
+  }

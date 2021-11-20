@@ -1,0 +1,7 @@
+div{
+    width: 45%;
+    height: 25vh;
+    border-left: 10px solid var(--naranja);
+    background: var(--azul);
+    border-radius: 15px;
+}

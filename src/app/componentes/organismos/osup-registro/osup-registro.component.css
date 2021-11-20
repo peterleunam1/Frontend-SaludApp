@@ -1,0 +1,55 @@
+.plantilla{
+  display: none;
+}
+@media (max-width: 580px){
+  .plantilla{
+      display: block;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+  .csup{
+      height: 30vh;
+      width: 100%;
+      background: var(--azul);
+      color: var(--blanco);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+  }
+  .csup img{
+      width: 80px;
+      height: 80px;
+  }
+  .csup h3{
+    font-size: 1.8rem;
+  }
+  .content{
+      width: 100%;
+      height: 74vh;
+      background: var(--fondo);
+      border-top-right-radius: 30px;
+      border-top-left-radius: 30px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+  }
+  
+  @media (max-width: 320px){
+      div img{
+          margin-top: 8px;
+      }
+      .csup{
+          padding-bottom:45px;
+      }
+      .csup h3{
+        margin: 0;
+        font-size: 1.4rem;
+      }
+  }
+}

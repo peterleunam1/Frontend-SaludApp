@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root{
+    --naranja: #EC524B;
+    --azul: #6270DD;
+    --azul-oscuro: #002251;
+    --blanco: #ffffff;
+    --naranja-oscuro: rgb(236, 82, 75, 0.8);
+    --gris: #91919F;
+    --fondo: #F1F1FA;
+    --azul-claro: #CFDFFF;
+}
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    color: var(--gris);
+    overflow: hidden;
+}

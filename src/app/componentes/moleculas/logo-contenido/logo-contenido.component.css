@@ -1,0 +1,27 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  pointer-events: none;
+  transition: .5s ease width;
+  overflow: hidden;
+}
+div h3{
+  color: var(--blanco);
+  opacity: 0;
+}
+
+div.active h3 {
+  transition-delay: 0.5s;
+}
+
+div.active h3 {
+  opacity: 1;
+}
+/* @media (max-width: 580px){
+  div{
+    display: none;
+  }
+} */

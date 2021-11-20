@@ -1,0 +1,61 @@
+.plantilla{
+    display: none;
+}
+@media (max-width: 580px){
+    .plantilla{
+        display: block;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .csup{
+        height: 49vh;
+        width: 100%;
+        background: var(--azul);
+        color: var(--blanco);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .csup img{
+        width: 120px;
+        height: 120px;
+    }
+    .csup p b{
+        font-size: 40px;
+    }
+    .csup p{
+        font-size: 26px;
+    }
+    .content{
+        width: 100%;
+        height: 55vh;
+        background: var(--fondo);
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    @media (max-width: 375px){
+        .csup p b{
+            font-size: 32px;
+        }
+        .csup p{
+            font-size: 21px;
+        }
+    }
+    @media (max-width: 320px){
+        .csup p b{
+            font-size: 29px;
+        }
+        .csup p{
+            font-size: 18px;
+        }
+    }
+}

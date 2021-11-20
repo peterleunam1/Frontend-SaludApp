@@ -1,0 +1,26 @@
+
+.container{
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 90vh;
+
+}
+section{
+    background-color: var(--azul-claro);
+    width: 100%;
+    height: 70vh;
+    border-radius: 15px;
+}
+h1{
+    color: var(--azul);
+}
+img{
+    width: 246px;
+    border-radius: 15px;
+    position: absolute;
+    left: 1000px;
+    top: 100px;
+}

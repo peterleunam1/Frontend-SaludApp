@@ -1,0 +1,9 @@
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 70px;
+}
+div img{
+    width: 100%
+}
