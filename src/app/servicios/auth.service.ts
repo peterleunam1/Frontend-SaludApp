@@ -9,13 +9,31 @@ export class AuthService {
   private _registerUrl = "http://localhost:8000/api/v1/usuarios/";
   private _loginUrl = "http://localhost:8000/api/v1/usuariosauth/";
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
-  registerUser(user: any) {
-    return this.http.post<any>(this._registerUrl, user);
+  async registerUser(user: any) {
+
+    let formBody: Array<any> | string = []; 
+    for (var property in user) {
+      var encodedKey = encodeURIComponent(property);
+      var encodedValue = encodeURIComponent(user[property]);
+      formBody.push(encodedKey + "=" + encodedValue);
+    }
+    formBody = formBody.join("&"); 
+
+    const response = await fetch(this._registerUrl, {
+      method: 'POST',
+      body: formBody,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    });
+    const data = await response.json();
+    return {response, data};
   }
 
-  loginUser(user: any) {
-    return this.http.post<any>(this._loginUrl, user);
+  async loginUser() {
+ 
   }
+  
 }

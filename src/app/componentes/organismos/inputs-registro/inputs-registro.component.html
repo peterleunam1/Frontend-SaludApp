@@ -1,35 +1,38 @@
 <div class="logBox">
   <form>
-    <app-input-icon
+    <p class="info-message" [ngStyle]="{color: colorInfo}">{{infoMessage}}</p>
+    <app-input
       [icon]="'bx bx-user'"
       [placeholder]="'Nombre Completo'"
       [id]="'nombreCompleto'"
-    ></app-input-icon>
-    <app-input-icon
+      (sendValue)="getNombreCompleto($event)"
+    ></app-input>
+    <app-input
       [icon]="'bx bx-id-card'"
       [placeholder]="'Numero de identidicación'"
       [id]="'numeroDocumento'"
-    ></app-input-icon>
-    <app-input-icon
-      [icon]="'bx bx-plus-medical'"
-      [placeholder]="'Eps Afiliado'"
-      [id]="'eps'"
-    ></app-input-icon>
-    <app-input-icon
+      (sendValue)="getNumeroDocumento($event)"
+    ></app-input>
+    <select name="eps" id="eps" (change)="getEps($event)">
+      <option selected disabled value="">Selecciona aquí</option>
+      <option *ngFor="let e of eps" value="{{e['id_eps']}}">{{e['nombre']}}</option>
+    </select>
+    <app-input
       [icon]="'bx bx-mail-send'"
       [placeholder]="'Correo Electrónico'"
       [tipo]="'email'"
       [id]="'email'"
-    ></app-input-icon>
-    <app-input-icon
+      (sendValue)="getCorreo($event)"
+    ></app-input>
+    <app-input
       [icon]="'bx bxs-key'"
       [placeholder]="'Contraseña'"
       [tipo]="'password'"
       [id]="'password'"
-    ></app-input-icon>
-    <app-boton [text]="'Crear cuenta'"></app-boton><br/>
-    <app-boton-alerta [text]="'Regresar'"></app-boton-alerta>
-
+      (sendValue)="getContrasenia($event)"
+    ></app-input>
+    <app-boton [text]="'Crear cuenta'" (click)="registrarUsuario()"></app-boton><br />
+    <app-boton-alerta [text]="'Regresar'" (click)="goToLogin()"></app-boton-alerta>
     <p>
       Si no aparce como afiliado <br />
       <a href="#">Ingrese aquí a nuestra línea de atención</a>

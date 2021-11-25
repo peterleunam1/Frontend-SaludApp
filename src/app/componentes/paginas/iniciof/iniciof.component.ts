@@ -11,6 +11,7 @@ export class IniciofComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }

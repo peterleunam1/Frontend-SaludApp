@@ -11,6 +11,8 @@ export class InicioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const userInfo: any = JSON.parse(localStorage.getItem('userInfo') || '{}') || null;
+    console.log(userInfo);
   }
 
 }

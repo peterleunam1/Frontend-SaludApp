@@ -9,13 +9,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BotonComponent } from './componentes/atomos/boton/boton.component';
 import { BotonAlertaComponent } from './componentes/atomos/boton-alerta/boton-alerta.component';
-import { InputsComponent } from './componentes/atomos/inputs/inputs.component';
+import { InputIconComponent } from './componentes/atomos/inputs/inputs.component';
 import { RelojComponent } from './componentes/atomos/reloj/reloj.component';
 import { TarjetaUnoComponent } from './componentes/atomos/tarjeta-uno/tarjeta-uno.component';
 import { TarjetaIconComponent } from './componentes/atomos/tarjeta-icon/tarjeta-icon.component';
 import { TarjetaIcon2Component } from './componentes/atomos/tarjeta-icon2/tarjeta-icon2.component';
 import { TarjetaDosComponent } from './componentes/atomos/tarjeta-dos/tarjeta-dos.component';
-import { InputIconComponent } from './componentes/moleculas/input-icon/input-icon.component';
 import { MenuIconComponent } from './componentes/atomos/menu-icon/menu-icon.component';
 import { MenuIconCerrarComponent } from './componentes/atomos/menu-icon-cerrar/menu-icon-cerrar.component';
 import { InputsLoginComponent } from './componentes/organismos/inputs-login/inputs-login.component';
@@ -41,13 +40,12 @@ import { HomeComponent } from './componentes/plantillas/home/home.component';
     AppComponent,
     BotonComponent,
     BotonAlertaComponent,
-    InputsComponent,
+    InputIconComponent,
     RelojComponent,
     TarjetaUnoComponent,
     TarjetaIconComponent,
     TarjetaIcon2Component,
     TarjetaDosComponent,
-    InputIconComponent,
     MenuIconComponent,
     MenuIconCerrarComponent,
     InputsLoginComponent,

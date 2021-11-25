@@ -1,1 +1,4 @@
-<input type={{tipo}} placeholder={{placeholder}} id={{id}}>
+<div class="input-field">
+    <i class='{{icon}} input-icon'></i>
+    <input type={{tipo}} placeholder={{placeholder}} id={{id}} (change)="updateMessage($event)">
+</div>

@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { saveName } from 'src/app/helpers/parseName';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { AuthService } from 'src/app/servicios/auth.service';
+import { InputsRegistroComponent } from '../../organismos/inputs-registro/inputs-registro.component';
 
 @Component({
   selector: 'app-registrare',
@@ -9,10 +9,12 @@ import { AuthService } from 'src/app/servicios/auth.service';
 })
 export class RegistrareComponent implements OnInit {
 
-  constructor(private auth: AuthService) { }
+  constructor() { }
 
-  // registerMethod = this.auth.registerUser;
-  
   ngOnInit(): void {
+    const userInfo: any = JSON.parse(localStorage.getItem('userInfo') || '{"error": "User info not found"}');
+    if(!userInfo.error){
+      window.location.href = '/inicio';
+    }
   }
 }

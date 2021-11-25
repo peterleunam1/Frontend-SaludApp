@@ -10,6 +10,9 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    const userInfo: any = JSON.parse(localStorage.getItem('userInfo') || '{"error": "User info not found"}');
+    if(userInfo.error){
+      window.location.href = '/iniciar-sesion';
+    }
   }
-
 }

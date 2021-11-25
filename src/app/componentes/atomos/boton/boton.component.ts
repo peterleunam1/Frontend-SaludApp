@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class BotonComponent implements OnInit {
 
   @Input() text: string="Default";
+  @Input() action: any; 
 
   constructor() { }
 

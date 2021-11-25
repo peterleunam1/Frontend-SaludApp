@@ -7,9 +7,7 @@ import {HomeComponent} from './componentes/plantillas/home/home.component';
 const routes: Routes = [
   { path: 'iniciar-sesion', component: LoginComponent,  pathMatch: 'full'},
   { path: 'registrar', component: RegistrareComponent,  pathMatch: 'full'},
-  { path: 'inicio', component: HomeComponent,  pathMatch: 'full'}, 
-
-  
+  { path: 'inicio', component: HomeComponent,  pathMatch: 'full'},
 ];
 
 @NgModule({

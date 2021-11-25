@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-menu-icon-cerrar',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuIconCerrarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+    window.localStorage.clear();
+    this.router.navigate(['/iniciar-sesion']);
   }
 
 }
